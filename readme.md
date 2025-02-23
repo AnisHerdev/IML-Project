@@ -1,8 +1,11 @@
 # Rock Paper Scissors Gesture Recognition
 
-This project is a Rock Paper Scissors gesture recognition system using a Convolutional Neural Network (CNN) and MediaPipe for hand tracking.
+This project is a Rock Paper Scissors gesture recognition system using MediaPipe for hand tracking.
 
 ## Project Structure
+
+- `testingMediapipe.py`: Main script for detecting hand gestures and classifying them as rock, paper, or scissors.
+- `requirements.txt`: List of required Python packages.
 
 ## Setup
 
@@ -39,9 +42,26 @@ This project is a Rock Paper Scissors gesture recognition system using a Convolu
     pip install -r requirements.txt
     ```
 
-## Data Collection
+## Running the Project
 
-To collect gesture images, run the [dataCollection.py](http://_vscodecontentref_/5) script:
+To run the hand gesture recognition script, execute the following command:
 
 ```sh
-python dataCollection.py
+python testingMediapipe.py
+```
+
+## How It Works
+
+1. The script uses MediaPipe to detect hand landmarks from the webcam feed.
+2. The `classify_hand_shape` function classifies the detected hand shape as rock, paper, or scissors based on the distances between specific hand landmarks.
+3. The classified hand shape is displayed on the webcam feed.
+
+## Requirements
+
+- Python 3.6+
+- OpenCV
+- MediaPipe
+
+## License
+
+This project is licensed under the MIT License.
