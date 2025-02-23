@@ -1,6 +1,7 @@
 # Rock Paper Scissors Gesture Recognition
 
-This project is a Rock Paper Scissors gesture recognition system using MediaPipe for hand tracking.
+This project is a Rock Paper Scissors gesture recognition system using MediaPipe for hand tracking.<br>
+Dataset used [Kaggle](https://www.kaggle.com/datasets/drgfreeman/rockpaperscissors/data?select=paper)
 
 ## Project Structure
 
