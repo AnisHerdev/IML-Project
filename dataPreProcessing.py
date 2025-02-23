@@ -62,7 +62,7 @@ model.compile(optimizer='adam',
 
 # Train the model
 history = model.fit(X_train, y_train, validation_data=(X_test, y_test),
-                    epochs=15, batch_size=32)
+                    epochs=50, batch_size=32)
 
 # Save the trained model
 model.save("rock_paper_scissors_model.h5")
@@ -70,4 +70,5 @@ model.save("rock_paper_scissors_model.h5")
 print("Model training complete and saved as 'rock_paper_scissors_model.h5'")
 
 test_loss, test_acc = model.evaluate(X_test, y_test)
+print(f"Test Loss: {test_loss*100}%")
 print(f"Test Accuracy: {test_acc * 100:.2f}%")
