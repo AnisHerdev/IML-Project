@@ -12,8 +12,8 @@ This project is a Rock Paper Scissors gesture recognition system using MediaPipe
 1. **Clone the repository:**
 
     ```sh
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/AnisHerdev/IML-Project.git
+    cd IML-Project
     ```
 
 2. **Create a virtual environment:**
